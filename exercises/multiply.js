@@ -12,13 +12,16 @@
 
 const multiply = (a, b) => {
     let totalMultiply = 0;
-    for (let i = 0; i < a;) { 
-        if (a < 0) {
+    if (a >= 0) {
+        for (let i = 0; i < a;) {
+            totalMultiply += b
+            i++ 
+        }
+    }
+    if (a < 0) {
+        for (let i = 0; i > a;) {
             totalMultiply -= b
             i--
-        } else if (a >= 0) {
-            totalMultiply += b
-            i++
         }
     }
     return totalMultiply;
