@@ -10,6 +10,20 @@
 
 // Your code :
 
+const multiply = (a, b) => {
+    let totalMultiply = 0;
+    for (let i = 0; i < a;) { 
+        if (a < 0) {
+            totalMultiply -= b
+            i--
+        } else if (a >= 0) {
+            totalMultiply += b
+            i++
+        }
+    }
+    return totalMultiply;
+}
+
 //* Begin of tests
 const assert = require('assert')
 
